@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{SYS_URL}template/style/global.css" />
+{loadcss passport}
+<script type="text/javascript">
+var CJY = {
+	domain : '{SYS_URL}',
+	isLogin : 0,
+	flashPath : '{SYS_URL}static/flash',
+	imgPath : '{SYS_URL}static/image',
+	myimgPath : '{SYS_URL}template/{echo $this->global['template']['skin']}/{ROUTE_M}/images',
+    lang : {
+        'close' : '{lang close}',
+        'ajaxpost' : '{lang ajaxpost}',
+        'selectFile' : '{lang select_file}'
+    }
+};
+</script>
+<script src="{SYS_URL}static/js/jquery.js" ></script>
+<script src="{SYS_URL}static/js/common.js" ></script>
+<script src="{SYS_URL}static/js/utils.js" ></script>
+<script src="{SYS_URL}static/js/pop.js" ></script>
+<script src="{SYS_URL}static/js/formValidator.js" ></script>
+{loadjs passport}
+</head>
+<body>

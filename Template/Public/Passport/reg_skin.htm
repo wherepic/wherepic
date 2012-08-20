@@ -1,0 +1,49 @@
+{subtemplate header}
+
+<div class="bg_black" id="bg-black">
+	<div class="main_block" id="main-block">
+		<div class="abs_block" id="abs-block">
+            <div class="head_block"></div>
+            <div class="step_ico step_ico_3"></div>
+            <div class="step_title title_xzmb"></div>
+            <div class="mid_block clearfix">        
+                <form name="passport_reg_form" id="passport_reg_form" action="{echo R();}" method="post">
+                    <input type="hidden" name="skin" id="skin" value="" />
+                    <div class="form_block skin_block clearfix">
+                        <div class="list" action-value="1"><img src="{PUBLIC_IMAGES}Test/skin_1.gif" /></div>
+                        <div class="list" action-value="1"><img src="{PUBLIC_IMAGES}Test/skin_2.gif" /></div>
+                        <div class="list" action-value="1"><img src="{PUBLIC_IMAGES}Test/skin_3.gif" /></div>
+                        <div class="list" action-value="1"><img src="{PUBLIC_IMAGES}Test/skin_3.gif" /></div>
+                        <div class="list" action-value="1"><img src="{PUBLIC_IMAGES}Test/skin_4.gif" /></div>
+                        <div class="list" action-value="1"><img src="{PUBLIC_IMAGES}Test/skin_2.gif" /></div>
+                        <div class="blank10"></div>
+                        <div class="fields">
+                            <span class="btn comp"><input type="button" name="nextBtn" value="{lang Complete}" /></span>
+                            <span class="btn"><input type="submit" name="nextBtn" id="BtnUploadFirstPicture" value="{lang BtnUploadFirstPicture}" /></span>  
+                        </div>                        
+                    </div>                     
+                </form>
+            </div>
+            <div class="bottom_block"></div>
+        </div>
+	</div>
+	<div class="footer_bg" id="footer-bg">
+		<div class="wo_block"></div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function(){
+    $(".list").click(function(){
+        $(this).parent().find(".list_focus").removeClass("list_focus").addClass("list");
+        $(this).addClass("list_focus").removeClass("list");
+        $("#skin").val($(this).attr("action-value"));
+    });
+    $("#passport_reg_form")._submitForm(function(){
+        var flag = $("#skin").vaildator({focusObj:$("#BtnUploadFirstPicture"),onerror:'{lang JS_SKIN_EMPTY}',isEmpty:false});
+        return false;
+    },function(result){
+        
+    }); 
+});
+</script>
+{subtemplate footer}

@@ -1,0 +1,22 @@
+body{background-image:url("../images/bg.jpg");}
+.input_next{background: #d7f1dc;border:0px;border-bottom:1px solid #c9c9c9;height:27px;line-height:25px;color:#8d938e;text-align:center;}
+
+.bg_black{width:100%;background: url("../images/main_bg.jpg") repeat-x;_height:718px;min-height: 718px;}
+.bg_black .main_block{background: url("../images/star_bg.jpg") no-repeat left top;width:820px;margin:0px auto;_height:520px;min-height: 520px;}
+.bg_black .abs_block{position: absolute;top:190px;z-index:10;margin:0px auto;}
+.bg_black .step_1{background:url("../images/step_1.png") no-repeat;width:660px;height:317px;}
+.bg_black .step_1 .form_block{margin:60px 0px 0px 200px;}
+.bg_black .step_1 .form_block .fields{margin-bottom: 10px;clear:both;height:33px;line-height:33px;text-align:left;}
+.bg_black .step_1 .form_block .fields label{color:#999;padding-left:10px;width:200px;float:left;word-wrap:break-word;word-break:normal;}
+.bg_black .step_1 .form_block .fields label.domain{width:auto;padding:0px;width:160px;font-size: 14px;font-family: Verdana;line-height:31px;height:31px;}
+.bg_black .step_1 .form_block .fields .input{width:240px;height:33px;float:left;}
+.bg_black .step_1 .form_block .fields .input input[type="text"],input[type="password"]{height:25px;width:228px;line-height:25px;height:25px;padding:2px 6px;color: #888;}
+.bg_black .step_1 .form_block .fields .w80{width:80px;}
+.bg_black .step_1 .form_block .fields .w80 input[type="text"]{width:66px;}
+.bg_black .step_1 .form_block .fields .input_next{width:240px;cursor:pointer;}
+.bg_black .step_1 .form_block .fields .input_next:hover{background:#c7eace;}
+
+
+
+.footer_bg{width:100%;height:395px;position: absolute;z-index:2;background: url("../images/footer_bg.png") repeat-x left bottom;bottom:0px;}
+.footer_bg .wo_block{background:url("../images/footer_wo.png") no-repeat;width:877px;height:335px;margin:0px auto;}
