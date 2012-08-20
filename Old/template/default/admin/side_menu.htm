@@ -1,7 +1,0 @@
-<ul>
-	<!--{loop $this->menu $key $val}-->
-		<!--{loop $val $k $v}-->
-		<li><a href="{SYS_URL}{echo $this->getPostUrl($k,$key,'admin')}" {if $k == $_GET['method']} class="focus"{/if}>{$v}</a></li>
-		<!--{/loop}-->
-	<!--{/loop}-->
-</ul>

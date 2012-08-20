@@ -1,8 +1,0 @@
-{if $this->session->get("poptips")}
-<script type="text/javascript">
-$(function(){
-	$("body").pop({content:'{echo  $this->session->get("message","poptips")}',cat:'{echo  $this->session->get("status","poptips")}'});
-})
-</script>
-{echo  $this->session->removeAll("poptips")}
-{/if}
