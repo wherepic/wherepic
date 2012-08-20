@@ -1,0 +1,110 @@
+{subtemplate header}
+<div class="header_block">{lang basic}</div>
+<form name="system_basic_form" id="system_basic_form" action="{SYS_URL}{echo $this->getPostUrl('update');}" method="post">
+<table class="form_table">
+	<tr>
+		<th>{lang sitename}</th>
+		<td><input type="text" name="sitename" id="sitename" class="regular" value="{$setting['sitename']}" /> <span class="required">{lang required}</span></td>
+	</tr>
+	<tr>
+		<th>{lang keyword}</th>
+		<td><input type="text" name="keyword" id="sitekeyword" class="regular" value="{$setting['keyword']}"/> <span class="description"></span></td>
+	</tr>
+	<tr>
+		<th>{lang sitedesc}</th>
+		<td><textarea name="sitedesc" id="sitedesc" class="regular" >{$setting['sitedesc']}</textarea></td>
+	</tr>		
+	<tr>
+		<td colspan="2" class="line">&nbsp;</td>
+	</tr>
+	<tr>
+		<th>{lang userregedit}</th>
+		<td>
+			<label for="userregedit_y"><input type="radio" name="userregedit" id="userregedit_y" value="1" />{lang open}</label> &nbsp;
+			<label for="userregedit_n"><input type="radio" name="userregedit" id="userregedit_n" value="0"/>{lang off}</label>
+		</td>
+	</tr>
+	<tr>
+		<th>{lang verifcode}</th>
+		<td>
+			<label for="verifcode_y"><input type="radio" name="verifcode" id="verifcode_y" value="1" />{lang open}</label> &nbsp;
+			<label for="verifcode_n"><input type="radio" name="verifcode" id="verifcode_n" value="0"/>{lang off}</label> &nbsp;
+			<span class="title">{lang type}</span>
+			<select name="veriftype">
+				<option value="1">{lang number}</option>
+				<option value="2">{lang abc}</option>
+				<option value="3">{lang number}+{lang abc}</option>
+			</select>
+			<span class="title">{lang length}</span>
+			<input type="text" name="veriflen" id="veriflen" value="4" class="small_text" vali="isInt" maxLength="1" />
+		</td>
+	</tr>	
+	<tr>
+		<td colspan="2" class="line">&nbsp;</td>
+	</tr>
+	<tr>
+		<th valign="top">{lang commentset}</th>
+		<td>
+			<p><label for="comment_tx"><input type="checkbox" name="comment[form]" id="comment_tx"> {lang comment_t1}</label></p>
+			<p><label for="comment_zc"><input type="checkbox" name="comment[login]" id="comment_zc"> {lang comment_t2} </label></p>
+			<p><label for="comment_wz"><input type="checkbox" name="comment[filter]" id="comment_wz"> {lang comment_t3} </label></p>
+			<p><label for="comment_sh"><input type="checkbox" name="comment[verify]" id="comment_sh"> {lang comment_t4} </label><span class="description">({lang comment_t4_desc})</span></p>
+		</td>
+	</tr>
+	<tr>
+		<th valign="top">{lang keyword}</th>
+		<td>
+			<p><span class="description">{lang comment_t5}</span></p>
+			<textarea name="comment_keyword" id="comment_keyword" class="regular" style="height:100px;"></textarea>
+
+		</td>
+	</tr>
+	<tr>
+		<th valign="top">{lang blacklist}</th>
+		<td>
+			<p><span class="description">{lang comment_t6}</span></p>
+			<textarea name="comment_blacklist" id="comment_blacklist" class="regular" style="height:100px;"></textarea>
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="line">&nbsp;</td>
+	</tr>
+	<tr>
+		<th>{lang main_sever}</th>
+		<td><input type="text" name="mail[server]" id="mail_server" value="mail.example.com" class="regular" /></td>
+	</tr>
+	<tr>
+		<th>{lang main_port}</th>
+		<td><input type="text" name="mail[port]" id="mail_port" value="110" class="small_text" vali="isInt" /></td>
+	</tr>
+	<tr>
+		<th>{lang login_user}</th>
+		<td><input type="text" name="mail[user]" id="mail_user" value="login@example.com" class="regular" /></td>
+	</tr>
+	<tr>
+		<th>{lang password}</th>
+		<td><input type="text" name="mail[password]" id="mail_pw" value="password" class="regular" /></td>
+	</tr>			
+	<tr>
+		<td colspan="2" class="line">&nbsp;</td>
+	</tr>		
+	<tr>
+		<th>&nbsp;</th>
+		<td><input type="submit" value="{lang btn_update}" class="button_ok" /></td>
+	</tr>
+
+</table>
+</form>
+<script type="text/javascript">
+$(function(){
+	$("#system_basic_form")._submitForm(function(){
+		var flag = $("#sitename").vaildator({onerror:'{lang js_sitename_empty}',min:2,isEmpty:true});
+		return flag;
+	},function(result){
+		location.reload();
+		$(document).scrollTop(0);
+	});
+});
+</script>
+{subtemplate footer}

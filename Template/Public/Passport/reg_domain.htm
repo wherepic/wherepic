@@ -1,0 +1,43 @@
+{subtemplate header}
+
+<div class="bg_black" id="bg-black">
+	<div class="main_block" id="main-block">
+		<div class="abs_block" id="abs-block">
+            <div class="head_block"></div>
+            <div class="step_ico step_ico_2"></div>
+            <div class="step_title title_gxym"></div>
+            <div class="mid_block clearfix">        
+                <form name="passport_reg_form" id="passport_reg_form" action="{echo R();}" method="post">
+                    <div class="form_block">
+                        <div class="fields">
+                            <div class="input"><input type="text" name="domain" id="domain" action-value="{lang Domain}" value="" /></div>  
+                        </div> 
+                        <div class="fields">{lang DomainTips}</div>  
+                        <div class="fields">
+                            <div class="input">
+                                 <span class="btn"><input type="submit" name="nextBtn" value="{lang StepNext}" /></span>
+                            </div>  
+                        </div> 
+                    </div>
+                </form>
+            </div>
+            <div class="bottom_block"></div>
+        </div>
+	</div>
+	<div class="footer_bg" id="footer-bg">
+		<div class="wo_block"></div>
+	</div>
+</div>
+<script type="text/javascript">
+$(function(){
+
+    $("#passport_reg_form")._submitForm(function(){
+        var flag = $("#domain").vaildator({onerror:'{lang JS_DOMAIN_EMPTY}',min:4,max:20,isEmpty:true});
+        return flag;
+    },function(result){
+        location.href = result.step;
+
+    }); 
+});
+</script>
+{subtemplate footer}

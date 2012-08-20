@@ -1,0 +1,59 @@
+@charset "utf-8";
+body {font-size:12px; text-align:left; font-family:"Microsoft YaHei",Arial,Lucida,Verdana,Helvetica,sans-serif;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p { padding:0; margin:0; }
+input, select ,textarea{ font-size:12px; outline:none;resize: none; }
+em{font-style: normal;font-weight: normal;}
+img { border:0; }
+ol, ul, li { list-style-type:none;padding:0; margin:0; }
+ol, ul, li { list-style-type:none; }
+textarea,input{outline:none;}
+a { color:#888; text-decoration:none; }
+a:hover { color:#ff4400;}
+.arial{font-family:Arial;}
+.verdana{font-family:verdana;}
+.f14{font-size:14px;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear: both;float: none;}
+.blank { height:0px; overflow:hidden; clear:both;font-size:0px;}
+.blank4 { height:4px; overflow:hidden; clear:both;font-size:0px;}
+.blank6 { height:6px; overflow:hidden; clear:both;font-size:0px;}
+.blank8 { height:8px; overflow:hidden; clear:both;font-size:0px;}
+.blank10{ height:10px; overflow:hidden; clear:both;font-size:0px;}
+.blank12 { height:12px; overflow:hidden; clear:both;font-size:0px;}
+.blank16 { height:16px; overflow:hidden; clear:both;font-size:0px;}
+.blank20 { height:20px; overflow:hidden; clear:both;font-size:0px;}
+.blank23 { height:23px; overflow:hidden; clear:both;font-size:0px;}
+.clearfix:after {clear: both;content: ".";display: block;height: 0;visibility: hidden;}
+
+input[type="text"],input[type="file"],input[type="password"],textarea,select{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;border:1px solid #aaa;}
+input[type="checkbox"], input[type="radio"] {margin: 1px 0 0; padding: 0;}
+input[type="text"].input_focus,
+input[type="file"].input_focus,
+input[type="password"].input_focus,
+.input_focus{border:1px solid #3399cc;background:#eaf8fc;}
+input[type="text"].input_succ,
+input[type="file"].input_succ,
+input[type="password"].input_succ,
+.input_succ{border:1px solid #339900;background:#f4fee9;}
+input[type="text"].input_err,
+input[type="file"].input_err,
+input[type="password"].input_err,
+.input_err{border:1px solid #ff0000;background:#fff0f0;}
+span.btn{background: #d7f1dc;border-bottom:1px solid #c9c9c9;display: inline-table;}
+span.btn input{background: #d7f1dc;border:0px;height:27px;line-height:25px;color:#8d938e;text-align:center;}
+
+
+.isTipsBox{top:100px;position: absolute;z-index:99;}
+.isTipsBox .tb_background{background: #000;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;padding:5px 20px;color:#fff;letter-spacing:1px;}
+.isTipsBox .arr{width:16px;height:8px;text-align: center;overflow: hidden;float:left;margin-top:-7px;*margin-top:-8px;margin-left:10px;}
+.isTipsBox .arr *{display: block;font-family: "宋体";font-size: 14px;width:16px;height: 18px;overflow: hidden;}
+.isTipsBox .arr span{color:#000;display:block;height:18px;line-height:18px;}
+
+.w1000{width:1000px;margin:0px auto;}
+
+.headerblock{background:url("../Head/Images/header_bg.png") repeat-x;height:52px;overflow:hidden;}
+.headerblock .logo{width:128px;height:52px;}
+
+.sync_login_sian{background:url("../Head/Images/sync_login_ico.png") no-repeat;width:87px;height:40px;display: block;}
+.sync_login_tencent{background:url("../Head/Images/sync_login_ico.png") no-repeat 0px -45px;width:87px;height:40px;display: block;}

@@ -1,0 +1,42 @@
+body{background-image:url("../Images/bg.jpg");}
+
+.bg_black{width:100%;background: url("../Images/main_bg.jpg") repeat-x;_height:718px;min-height: 718px;}
+.bg_black .main_block{background: url("../Images/star_bg.jpg") no-repeat left top;width:820px;margin:0px auto;_height:520px;min-height: 520px;}
+.bg_black .abs_block{position: absolute;top:190px;z-index:10;margin:0px auto;width:660px;}
+.bg_black .abs_block .head_block{background:url("../Images/float_bg.png") no-repeat;width:100%;height:5px;overflow:hidden;font-size:0px;}
+.bg_black .abs_block .mid_block{background:url("../Images/float_bg.png") repeat-y 0px -5px;width:100%;padding-left:10px;min-height:100px;}
+.bg_black .abs_block .bottom_block{background:url("../Images/float_bg.png") repeat-y 0px -701px;width:100%;height:5px;overflow:hidden;font-size:0px;}
+.bg_black .abs_block .bottom_block{background:url("../Images/float_bg.png") repeat-y 0px -703px;width:100%;height:6px;overflow:hidden;font-size:0px;}
+.bg_black .abs_block .step_ico{background:url("../Images/passport_ico.png") no-repeat;width:91px;height:82px;position:absolute;left:8px;}
+.bg_black .abs_block .step_ico_1{}
+.bg_black .abs_block .step_ico_2{background-position: 0px -88px;}
+.bg_black .abs_block .step_ico_3{background-position: 0px -178px;}
+.bg_black .abs_block .step_ico_4{background-position: 0px -268px;}
+.bg_black .abs_block .step_title{background:url("../Images/passport_ico.png") no-repeat;width:80px;height:22px;position:absolute;left:102px;top:10px;}
+.bg_black .abs_block .title_grzl{background-position: -181px 0px;}
+.bg_black .abs_block .title_xzmb{background-position: -181px -32px;}
+.bg_black .abs_block .title_gxym{background-position: -181px -69px;}
+
+
+/*.bg_black .step_1{background:url("../Images/step_1.png") no-repeat;width:660px;height:317px;}*/
+.bg_black .form_block{margin-left:200px;padding-top:60px;}
+.bg_black .form_block .fields{margin-bottom: 10px;clear:both;height:33px;line-height:33px;text-align:left;color:#999;}
+.bg_black .form_block .fields label{color:#999;padding-left:10px;width:200px;float:left;word-wrap:break-word;word-break:normal;}
+.bg_black .form_block .fields label.domain{width:auto;padding:0px;width:160px;font-size: 14px;font-family: Verdana;line-height:31px;height:31px;}
+.bg_black .form_block .fields .input{width:240px;height:33px;float:left;}
+.bg_black .form_block .fields .input input[type="text"],input[type="password"]{height:25px;width:228px;line-height:25px;height:25px;padding:2px 6px;color: #888;}
+.bg_black .form_block .fields span.btn input{width:240px;cursor:pointer;}
+.bg_black .form_block .fields span.btn input:hover{background:#c7eace;}
+.bg_black .form_block .fields .w80{width:80px;}
+.bg_black .form_block .fields .w80 input[type="text"]{width:66px;}
+.bg_black .skin_block{width:480px;margin:0px auto;padding-bottom:20px;}
+.bg_black .skin_block .list{width:150px;height:150px;overflow:hidden;margin:5px 5px;float:left;}
+.bg_black .skin_block .list:hover{border:4px solid #eee;margin:1px;}
+.bg_black .skin_block .list_focus{width:150px;height:150px;overflow:hidden;border:4px solid #009900;margin:1px;float:left;}
+
+.bg_black .skin_block .fields{padding-left:5px;}
+.bg_black .skin_block .fields span.comp{float:right;margin-right:5px;}
+.bg_black .skin_block .fields span.comp input{width:80px;}
+
+.footer_bg{width:100%;height:395px;position: absolute;z-index:2;background: url("../Images/footer_bg.png") repeat-x left bottom;bottom:0px;}
+.footer_bg .wo_block{background:url("../Images/footer_wo.png") no-repeat;width:877px;height:335px;margin:0px auto;}

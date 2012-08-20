@@ -1,0 +1,29 @@
+body{background:url('../Images/bg.jpg') no-repeat center top #fff4df;}
+
+.main_block{position: absolute;z-index: 10;top:50px;width:100%;}
+.view_person_h{background:url('../Images/transparent_1.png') repeat;border-top: 2px solid #faeacb;height:157px;width: 100%;margin-top:8px;}
+
+.view_block{position: absolute;top:0px;left:80px;}
+.person_block{clear: both;}
+.person_avatar{background: url("../Images/ico.png") no-repeat;width: 174px;height:221px;padding:6px 0px 0px 6px;float: left}
+.person_avatar .avatar{width:152px;height:152px;overflow: hidden;background:#fff;}
+.person_info{float:left;margin-left: 10px;margin-top: 30px;}
+.person_info .username{font-size: 30px;color:#7493ab;font-weight: 700;height:40px;line-height: 40px;overflow: hidden;}
+.person_info .desc{font-size: 28px;color:#fff;font-weight: 100;height:50px;line-height: 50px;overflow: hidden;}
+.person_info .ulink{clear: both;height:40px;}
+.person_info .ulink ul{height:40px;}
+.person_info .ulink ul li { display: inline; float: left; height: 40px; line-height: 40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 110px; word-wrap: normal;}
+.person_info .ulink ul li span{background: url("../Images/ico.png") no-repeat;width:41px;height:40px;display: inline-table;float:left;}
+.person_info .ulink ul li em{height:40px;line-height: 40px;width:60px;padding:0px 7px 0px 2px;text-align:center;display: inline-table;color:#859da9;font-family: Arial;font-size: 20px;float:left;}
+.person_info .ulink ul li .like{background-position:right -1px;}
+.person_info .ulink ul li .log{background-position:right -49px;}
+.person_info .ulink ul li .photo{background-position:right -145px;}
+.person_info .ulink ul li .review{background-position:right -98px;}
+
+.l_container{clear: both;height:700px;position: relative;background: url("../Images/line.png") repeat-y 250px top;}
+.l_scrubber{width:47px;left:177px;top:277px;position:fixed;background: url("../Images/line.png") repeat-y right top;}
+.l_scrubber .scrubber_list{font-size: 12px;line-height: 25px;margin:0px;padding:0px;}
+.l_scrubber .scrubber_list li{overflow: hidden;line-height: 25px;margin:0px;padding:0px;}
+.l_scrubber .scrubber_list li a{color: #7898af;line-height: 25px; float: right;padding-right: 7px;text-align: right;text-shadow: 0 1px 1px rgba(51, 129, 52, 0.5);width: 40px;}
+.l_scrubber .scrubber_list li a.cur,.l_scrubber .scrubber_list li a:hover{color: #ff6600}
+.l_scrubber .scrubber_list_m{clear: both;}

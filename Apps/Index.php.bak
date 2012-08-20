@@ -1,0 +1,12 @@
+<?php
+
+Class Index {
+	public function init(){
+		$handle  = file_get_contents('G:/htdocs/jaing/123.docx');
+		echo bin2hex($code);
+		//
+		//echo "Apps.Index.init";
+		include T("index");
+	}
+}
+?>

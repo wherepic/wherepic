@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+{loadcss global,uploadify,Admin:admin}
+<script type="text/javascript">
+var CJY = {
+	domain : '{__DOMAIN__}',
+	isLogin : 0,
+	flashPath : '{__DOMAIN__}static/flash',
+	imgPath : '{__DOMAIN__}static/image',
+	myimgPath : '{__DOMAIN__}template/{echo $this->global['template']['skin']}/{ROUTE_M}/images',
+    lang : {
+        'close' : '{lang close}',
+        'ajaxpost' : '{lang ajaxpost}',
+        'selectFile' : '{lang select_file}'
+    }
+};
+</script>
+{loadjs jquery,jquery.uploadify,common,utils,pop,formValidator,Admin:admin}
+</head>
+<body>
+<div class="admin_top_block" id="admin_top_block">
+	<div class="top-block">
+		<div class="logo"></div>
+		<div class="m_nav_block">
+			<ul>
+				<!--{loop $this->power $key $val}-->
+				<li{if $_GET['controller'] == $key} class="hover"{/if}>
+				<a href="{__DOMAIN__}{echo $this->getPostUrl(key($val['list'][$key]),$key,'admin')}" class="getMainNav" action-data="">{$val['name']}</a>
+				</li>
+				<!--{/loop}-->
+			</ul>
+		</div>
+		<div class="r_nav_block">
+			<span class="login_info">{lang current_user}：administrator</span>
+			<a href="">{lang password}</a>
+			<a href="">{lang lock}</a>
+			<a href="">{lang quit}</a>
+		</div>
+	</div>
+</div>
+<div class="m_nav_child_block" id="nav_child_block">{subtemplate side_menu}</div>
+<div class="main_block" id="main_block">
+<div id="popTips_block"></div>

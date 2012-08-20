@@ -1,0 +1,22 @@
+body{background:url("../Images/kedarsonigra.jpg") repeat center top;}
+.w1000{position:relative;}
+.regbackgroundbox{background-color:#fff;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;filter:alpha(opacity=60);opacity:0.6;position:absolute;width:388px;height:300px;right:0px;top:60px;}
+.regcontentbox{width:360px;position:absolute;right:9px;top:84px;}
+.regcontentbox h5{font-size:18px;color:#6e8b99;padding-left:11px;}
+.regcontentbox form{margin-top:30px;padding-left:11px;}
+.regcontentbox .fields{margin-bottom: 10px;clear:both;text-align:left;color:#888;height:38px;}
+.regcontentbox .fields label{float:left;word-wrap:break-word;word-break:normal;height:37px;line-height:37px;color:#888;font-size:14px;width:50px;}
+.regcontentbox .fields .inputbox{border-top:1px solid #5f6e7c;background: #7e93a5;}
+.regcontentbox .fields .input{width: 275px;height:37px;float:left;}
+.regcontentbox .fields .input input[type="text"]{border:1px solid #748797;border: 0px;background: #7e93a5;width: 260px;margin-left:5px;margin-top:8px;height:20px;line-height:20px;color:#dde2e7}
+.regcontentbox .fields .input span.btn{border-top:1px solid #fff;border-bottom:1px solid #afb3b5}
+.regcontentbox .fields .input span.btn input{border:0px;width:275px;height:36px;line-height:36px;text-align:center;background:#ffaaaa;color:#fff;font-size:18px;font-weight: 700;}
+
+.regcontentbox .or{height:9px;width:360px;background:url("../Images/or.png") no-repeat;font-size:0px;overflow:hidden;margin:12px 0px;}
+.regcontentbox .loginbox{width:338px;margin:0px auto;}
+.regcontentbox .loginbox h5{font-size: 14px;color:#999;font-weight:100;padding:0px;}
+.regcontentbox .loginbox h5 span{color:#7094a8;padding:0px 2px;}
+.regcontentbox .loginbox .left{width:220px;float:left;margin-top: 18px;}
+.regcontentbox .loginbox .left a{display: inline-table;margin-right:4px;*display:inline;zoom:1;}
+.regcontentbox .loginbox .right{width:100px;float:left;display:inline;margin-top: 18px;}
+.regcontentbox .loginbox .right input{width:100px;font-size:18px;height:37px;line-height:37px;font-weight: 700;}
